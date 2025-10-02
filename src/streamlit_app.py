@@ -31,4 +31,4 @@ with tab2:
      st.dataframe(summary_table)
 
 with tab3:
-    st.markdown"Dynamic Maps")
+    st.markdown("### Dynamic Maps")
