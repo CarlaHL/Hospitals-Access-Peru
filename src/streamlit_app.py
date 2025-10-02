@@ -18,8 +18,8 @@ Our code is hosted in the following GithHub repository: https://github.com/
 with tab2:
     st.markdown("### Static Maps & Department Analysis")
     
-    st.image("hospital_dept_bars.png", caption="Distribution of hospitals across departments", use_column_width=True)
-    st.image("hospital_dept_map.png", caption="Geospatial distribution of hospitals by department (choropleth map)", use_column_width=True)
+    st.image("hospital_dept_bars.png", caption="Distribution of hospitals across departments", use_container_width=True)
+    st.image("hospital_dept_map.png", caption="Geospatial distribution of hospitals by department (choropleth map)", use_container_width=True)
 
 with tab3:
         st.markdown("""
