@@ -22,24 +22,13 @@ with tab2:
      import matplotlib.pyplot as plt
      import seaborn as sns
 
-     #Título
-     st.title("Hospitals by Department")
+     st.title("Distribution of hospitals across departments")
 
-     # Aquí asumo que summary_table ya está definido
-     fig, ax = plt.subplots(figsize=(12, 6))
-     sns.barplot(
-     data=summary_table,
-     x="Departamento",
-     y="n_hospitals_dept",
-     ax=ax,
-     color="steelblue"
-     )
-     plt.xticks(rotation=90)
-     ax.set_title("Distribution of hospitals across departments")
+     # Leer el DataFrame desde la carpeta data/
+     summary_table = pd.read_csv("data/summary_table.csv")
 
-# Mostrar en Streamlit
-st.pyplot(fig)
-
+     # Mostrar en tabla interactiva
+     st.dataframe(summary_table)
 
 with tab3:
     st.markdown"Dynamic Maps")
