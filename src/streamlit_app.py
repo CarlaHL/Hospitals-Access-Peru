@@ -28,7 +28,7 @@ with tab2:
      summary_table = pd.read_csv("data/summary_table.csv")
      summary_table = summary_table.rename(
           columns={"Departamento": "Department",
-                   "n_hospitals_dept": "Hospitals"
+                   "n_hospitals_dept": "Number of Hospitals"
                   }
      )
      # Mostrar en tabla interactiva
