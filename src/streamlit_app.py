@@ -34,5 +34,8 @@ with tab2:
      # Mostrar en tabla interactiva
      st.dataframe(summary_table)
 
+     # Mostrar una imagen PNG/JPG guardada en tu carpeta
+     st.image("assets/hospitals_dept_bars.png", use_column_width=True)
+
 with tab3:
     st.markdown("### Dynamic Maps")
