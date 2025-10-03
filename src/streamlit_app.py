@@ -26,6 +26,11 @@ with tab2:
      st.subheader("Distribution of hospitals across departments")
      # Leer el DataFrame desde la carpeta data/
      summary_table = pd.read_csv("data/summary_table.csv")
+     summary_table = summary_table.rename(
+          columns={"Departamento": "Department",
+                   "n_hospitals_dept": "Hospitals"
+                  }
+     )
      # Mostrar en tabla interactiva
      st.dataframe(summary_table)
 
