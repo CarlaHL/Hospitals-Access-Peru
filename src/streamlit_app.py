@@ -43,3 +43,10 @@ with tab2:
 
 with tab3:
     st.markdown("# Dynamic Maps")
+       st.subheader("Lima")
+    with open("assets/mapa_lima.html", "r", encoding="utf-8") as f:
+        components.html(f.read(), height=600)
+
+    st.subheader("Loreto")
+    with open("assets/mapa_loreto.html", "r", encoding="utf-8") as f:
+        components.html(f.read(), height=600)
