@@ -11,7 +11,8 @@ with tab1:
 # Data Desctription
 The purpose of this application is to present a geospatial analysis of hospitals in Peru, both at the departmental level and at the population center level. Through this visualization, we aim to identify patterns in their geographic distribution as well as potential gaps in access to healthcare services.
 
-Our code is hosted in the following GithHub repository: https://github.com/
+
+Our code is hosted in the following GithHub repository: https://github.com/CarlaHL/Hospitals-Access-Peru
 """
      )
 
