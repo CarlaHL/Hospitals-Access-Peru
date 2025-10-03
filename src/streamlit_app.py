@@ -34,8 +34,11 @@ with tab2:
      # Mostrar en tabla interactiva
      st.dataframe(summary_table)
 
-     # Mostrar una imagen PNG/JPG guardada en tu carpeta
+     # Mostrar imagen PNG guardada
      st.image("assets/hospitals_dept_bars.png", use_container_width=True)
+
+     st.subheader("Geospatial distribution of hospitals by departments")
+     st.image("assets/hospitals_dept_map.png", use_container_width=True)
 
 with tab3:
     st.markdown("### Dynamic Maps")
