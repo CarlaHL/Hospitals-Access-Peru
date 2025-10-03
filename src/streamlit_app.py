@@ -23,11 +23,9 @@ with tab2:
      import seaborn as sns
      import pandas as pd
 
-     st.title("Distribution of hospitals across departments")
-
+     st.title("### Distribution of hospitals across departments")
      # Leer el DataFrame desde la carpeta data/
      summary_table = pd.read_csv("data/summary_table.csv")
-
      # Mostrar en tabla interactiva
      st.dataframe(summary_table)
 
