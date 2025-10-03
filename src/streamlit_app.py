@@ -23,6 +23,7 @@ with tab2:
      import matplotlib.pyplot as plt
      import seaborn as sns
      import pandas as pd
+     import streamlit.components.v1 as components   
 
      st.subheader("Distribution of hospitals across departments")
      # Leer el DataFrame desde la carpeta data/
