@@ -35,7 +35,7 @@ with tab2:
      st.dataframe(summary_table)
 
      # Mostrar imagen PNG guardada
-     st.image("assets/hospitals_dept_bars.png", use_container_width=True)
+     st.image("assets/hospitals_dept_bars.png", use_container_width=True,width=400 )
 
      st.subheader("Geospatial distribution of hospitals by departments")
      st.image("assets/hospitals_dept_map.png", use_container_width=True)
