@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c2355f1c09a558868365917988306eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0c2355f1c09a558868365917988306eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0c2355f1c09a558868365917988306eb = L.map(
+                "map_0c2355f1c09a558868365917988306eb",
+                {
+                    center: [-12.0464, -77.0428],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00108e5b05f6b5ec8dbfdfbda56dcab2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_00108e5b05f6b5ec8dbfdfbda56dcab2.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+        function geo_json_f36df461be91b5ea382fecc532add205_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fillColor": "red", "fillOpacity": 0.2};
+            }
+        }
+
+        function geo_json_f36df461be91b5ea382fecc532add205_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f36df461be91b5ea382fecc532add205 = L.geoJson(null, {
+                onEachFeature: geo_json_f36df461be91b5ea382fecc532add205_onEachFeature,
+            
+                style: geo_json_f36df461be91b5ea382fecc532add205_styler,
+        });
+
+        function geo_json_f36df461be91b5ea382fecc532add205_add (data) {
+            geo_json_f36df461be91b5ea382fecc532add205
+                .addData(data);
+        }
+            geo_json_f36df461be91b5ea382fecc532add205_add({"features": [{"geometry": {"coordinates": [[[-76.79833444311711, -10.444275613565475], [-76.79882518813369, -10.453133729228467], [-76.80019084634074, -10.461901559201232], [-76.8024183332158, -10.47049464168288], [-76.80548625643858, -10.478830192159402], [-76.80936511959071, -10.48682790173411], [-76.81401760428803, -10.494410711798698], [-76.81939892810584, -10.501505557537676], [-76.8254572749105, -10.50804407305298], [-76.83213429349264, -10.513963251261371], [-76.83936565971874, -10.519206052151006], [-76.8470816967821, -10.523721953481441], [-76.85520804755244, -10.527467438568694], [-76.86366639249927, -10.530406416407748], [-76.87237520620504, -10.532510570044538], [-76.8812505450948, -10.533759629808781], [-76.89020685869446, -10.534141568754404], [-76.89915781649283, -10.533652718414213], [-76.90801714232727, -10.53229780375593], [-76.91669944813884, -10.530089897016968], [-76.92512105895423, -10.527050290888392], [-76.93320082104361, -10.523208292305808], [-76.94086088538008, -10.518600938879521], [-76.94802745878023, -10.51327264074772], [-76.95463151543707, -10.50727475136074], [-76.96060946195975, -10.500665071390761], [-76.96590374950611, -10.493507290606038], [-76.97046342712669, -10.485870373143255], [-76.97424463102847, -10.47782789215211], [-76.97721100510427, -10.469457320266446], [-76.97933404875513, -10.46083928277278], [-76.98059338874779, -10.45205678069597], [-76.98097697259304, -10.44319439129991], [-76.98048118169379, -10.434337453706783], [-76.97911086328673, -10.425571247469826], [-76.97687928098229, -10.41698017199109], [-76.97380798448533, -10.408646934657101], [-76.96992659984728, -10.400651755472312], [-76.96527254235208, -10.393071595804019], [-76.95989065486704, -10.3859794186148], [-76.95383277518845, -10.379443487252], [-76.94715723657549, -10.373526709491264], [-76.93992830628852, -10.368286033096325], [-76.93221556752334, -10.363771898664067], [-76.92409325065897, -10.360027754977057], [-76.91563952020512, -10.357089641490525], [-76.90693572424651, -10.354985841941486], [-76.89806561352793, -10.353736612392499], [-76.88911453760666, -10.353353986314218], [-76.88016862571152, -10.35384165858003], [-76.87131396009282, -10.355194949495198], [-76.86263574971905, -10.357400849222262], [-76.85421751217774, -10.360438142199015], [-76.84614027156563, -10.364277610383509], [-76.83848178001118, -10.368882313407676], [-76.83131577025758, -10.374207942987127], [-76.82471124645237, -10.380203248222655], [-76.8187318199399, -10.386810527749498], [-76.81343509643871, -10.393966184046832], [-76.80887212051151, -10.401601334620418], [-76.80508688270389, -10.409642474220606], [-76.80211589414374, -10.418012181761926], [-76.7999878327616, -10.42662986517367], [-76.79872326461842, -10.435412537037807], [-76.79833444311711, -10.444275613565475]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_f36df461be91b5ea382fecc532add205.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            var marker_64a7ef2abe4387914cc0e36c75c94049 = L.marker(
+                [-10.443748046999925, -76.88965820299995],
+                {}
+            ).addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            var icon_04c31faae806a85cb8778cc44b169b1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64a7ef2abe4387914cc0e36c75c94049.setIcon(icon_04c31faae806a85cb8778cc44b169b1e);
+        
+    
+        var popup_80d5247d2aad29c04e62124b9d2938d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3f194fe05a3a98a1b7c5c0ed7959cf7 = $(`<div id="html_e3f194fe05a3a98a1b7c5c0ed7959cf7" style="width: 100.0%; height: 100.0%;"><b>Aislado:</b> YANAPAMPA<br>Hospitales: 0</div>`)[0];
+                popup_80d5247d2aad29c04e62124b9d2938d0.setContent(html_e3f194fe05a3a98a1b7c5c0ed7959cf7);
+            
+        
+
+        marker_64a7ef2abe4387914cc0e36c75c94049.bindPopup(popup_80d5247d2aad29c04e62124b9d2938d0)
+        ;
+
+        
+    
+    
+            marker_64a7ef2abe4387914cc0e36c75c94049.bindTooltip(
+                `<div>
+                     Centro poblado más aislado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        function geo_json_0ce090004018039680b4d2abe1757f77_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "fillColor": "green", "fillOpacity": 0.2};
+            }
+        }
+
+        function geo_json_0ce090004018039680b4d2abe1757f77_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0ce090004018039680b4d2abe1757f77 = L.geoJson(null, {
+                onEachFeature: geo_json_0ce090004018039680b4d2abe1757f77_onEachFeature,
+            
+                style: geo_json_0ce090004018039680b4d2abe1757f77_styler,
+        });
+
+        function geo_json_0ce090004018039680b4d2abe1757f77_add (data) {
+            geo_json_0ce090004018039680b4d2abe1757f77
+                .addData(data);
+        }
+            geo_json_0ce090004018039680b4d2abe1757f77_add({"features": [{"geometry": {"coordinates": [[[-76.95520358318619, -12.03103906552549], [-76.95570979547118, -12.039894820082688], [-76.95709553100453, -12.048659070447822], [-76.95934752302661, -12.057247386524862], [-76.96244415316731, -12.06557702600554], [-76.96635565693958, -12.073567732435226], [-76.97104440812959, -12.081142509551317], [-76.97646527943488, -12.0882283643832], [-76.98256607594757, -12.094757011897176], [-76.98928803735417, -12.100665534335258], [-76.99656640403737, -12.105896988831224], [-77.00433104162288, -12.110400957385833], [-77.01250711792483, -12.11413403384164], [-77.02101582571382, -12.117060243110217], [-77.02977514426607, -12.11915138856585], [-77.03870063225943, -12.120387324221197], [-77.0477062442626, -12.120756149037835], [-77.05670516282606, -12.120254321487039], [-77.06561063802592, -12.118886693258496], [-77.07433682623916, -12.11666646180745], [-77.0827996199409, -12.11361504222562], [-77.09091746041068, -12.10976185971054], [-77.09861212541446, -12.105144064683799], [-77.10580948418867, -12.099806173361307], [-77.11244021239128, -12.093799637303524], [-77.1184404600949, -12.087182346160212], [-77.12375246637642, -12.080018068468297], [-77.1283251145989, -12.072375835955455], [-77.13211442307943, -12.06432927734082], [-77.13508396648292, -12.05595590810266], [-77.13720522397087, -12.047336383097202], [-77.13845785085796, -12.038553719258735], [-77.13882987127896, -12.029692495886616], [-77.13831779013847, -12.020838040226888], [-77.13692662339697, -12.012075606184625], [-77.13466984653131, -12.003489554056063], [-77.13156926178985, -11.995162539147795], [-77.12765478563273, -11.98717471705421], [-77.12296415850147, -11.979602973195046], [-77.11754257979092, -11.972520183974943], [-77.11144227159555, -11.965994516618037], [-77.10472197546457, -11.96008877435649], [-77.09744638702105, -11.954859793215602], [-77.08968553387419, -11.950357896144492], [-77.08151410277651, -11.946626409694064], [-77.07301072244488, -11.943701247849116], [-77.06425720887125, -11.941610566982911], [-77.05533778029469, -11.940374495228502], [-77.04633824928513, -11.940004938854326], [-77.03734519960139, -11.940505467502527], [-77.02844515562822, -11.9418712793998], [-77.01972375226863, -11.944089246891984], [-77.01126491316768, -11.947138041890607], [-77.00315004507269, -11.950988340060016], [-76.99545725599164, -11.955603101822952], [-76.98826060459844, -11.960937927530525], [-76.98162938805227, -11.966941483432311], [-76.97562747504877, -11.973555994404217], [-76.97031269050903, -11.98071779874945], [-76.96573625783786, -11.988357959789179], [-76.96194230415304, -11.996402928409235], [-76.95896743330222, -12.004775250233331], [-76.95684037085418, -12.013394310656237], [-76.95558168457454, -12.02217711059691], [-76.95520358318619, -12.03103906552549]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_0ce090004018039680b4d2abe1757f77.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            var marker_b80e03a14b52ed30773e933a5bd42ce3 = L.marker(
+                [-12.030380854999972, -77.04701948699994],
+                {}
+            ).addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            var icon_62cfdaf099e2114ae4fa21a1b0414b4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b80e03a14b52ed30773e933a5bd42ce3.setIcon(icon_62cfdaf099e2114ae4fa21a1b0414b4d);
+        
+    
+        var popup_dbee3e947e6cc4bad6fd3d37ea8161d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5f84f0b5718c1a2c31865188b0d15c1 = $(`<div id="html_e5f84f0b5718c1a2c31865188b0d15c1" style="width: 100.0%; height: 100.0%;"><b>Concentrado:</b> BARRIO OBRERO INDUSTRIAL<br>Hospitales: 265</div>`)[0];
+                popup_dbee3e947e6cc4bad6fd3d37ea8161d1.setContent(html_e5f84f0b5718c1a2c31865188b0d15c1);
+            
+        
+
+        marker_b80e03a14b52ed30773e933a5bd42ce3.bindPopup(popup_dbee3e947e6cc4bad6fd3d37ea8161d1)
+        ;
+
+        
+    
+    
+            marker_b80e03a14b52ed30773e933a5bd42ce3.bindTooltip(
+                `<div>
+                     Centro poblado más concentrado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_00108e5b05f6b5ec8dbfdfbda56dcab2.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            geo_json_f36df461be91b5ea382fecc532add205.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+    
+            geo_json_0ce090004018039680b4d2abe1757f77.addTo(map_0c2355f1c09a558868365917988306eb);
+        
+</script>
+</html>
