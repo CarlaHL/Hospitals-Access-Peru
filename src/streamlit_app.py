@@ -17,7 +17,7 @@ Our code is hosted in the following GithHub repository: https://github.com/Carla
      )
 
 with tab2:
-     st.markdown("### Static Maps & Department Analysis")
+     st.markdown("# Static Maps & Department Analysis")
     
      import streamlit as st
      import matplotlib.pyplot as plt
@@ -42,4 +42,4 @@ with tab2:
      st.image("assets/hospitals_dept_map.png", use_container_width=True)
 
 with tab3:
-    st.markdown("### Dynamic Maps")
+    st.markdown("# Dynamic Maps")
